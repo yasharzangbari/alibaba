@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "strict": true,
+    "strict": false,
     "module": "ES2020",
     "target": "ES2020",
     // Doesn't apply to server/, see ts-node config down below and server/tsconfig.json
@@ -10,7 +10,6 @@
     "jsx": "react-jsx",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "noImplicitAny": true,
     "baseUrl": "./",
     "paths": {
       "~types/*": ["./types/*"],

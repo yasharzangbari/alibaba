@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
 import { PageContextProvider } from "./usePageContext";
 import type { PageContext } from "./types";
 import "./globalStyle.css";
-import { Link } from "./Link";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
 const queryClient = new QueryClient();
+
 export function PageShell({
   children,
   pageContext,

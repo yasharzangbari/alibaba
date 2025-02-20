@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  alibaba:
+    container_name: alibaba
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "3000:3000"
+      - "3001:3001"

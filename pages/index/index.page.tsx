@@ -13,7 +13,7 @@ const prefetchQueries = {
 
 const Page = () => {
   const [search, setSearch] = useState("");
-  const { data: hotels, isLoading } = useRequest<Hotel[]>(
+  const { data: hotels } = useRequest<Hotel[]>(
     [QUERY_KEYS.GET_HOTELS],
     endpoints.getHotels
   );
@@ -33,7 +33,14 @@ const Page = () => {
       />
       {filteredHotels?.map((hotel, index) => (
         <div key={index} className="hotel-card">
-          <img src={hotel.image} alt={hotel.name} className="hotel-image" />
+          <img
+            src={hotel.image}
+            alt={hotel.name}
+            className="hotel-image"
+            loading="lazy"
+            width={150}
+            height={131}
+          />
           <div className="hotel-info">
             <div className="hotel-name">{hotel.name}</div>
             <div className="hotel-description">{hotel.description}</div>
