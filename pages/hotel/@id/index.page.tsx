@@ -1,4 +1,3 @@
-import React from "react";
 import "./hotelDetail.css";
 import { Hotel } from "~types/hotels";
 import { toPersianNumber } from "~utils/toPersianNumber";
