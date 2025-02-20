@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "name": "هتل بین‌المللی لاله",
+      "description": "هتل بین‌المللی لاله تهران، با چشم‌انداز زیبای کوه‌های البرز و دماوند، یکی از معروف‌ترین هتل‌های تهران است که در کنار پارک لاله قرار دارد.",
+      "location": {
+        "lat": 35.71549,
+        "long": 51.39358
+      },
+      "stars": 5,
+      "image": "https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.jpg?s=612x612&w=0&k=20&c=9QtwJC2boq3GFHaeDsKytF4-CavYKQuy1jBD2IRfYKc="
+    },
+    {
+      "name": "هتل پارسیان آزادی",
+      "description": "هتل پارسیان آزادی تهران، در محله‌ی اوین در شمال تهران واقع شده و یکی از بزرگ‌ترین هتل‌های پایتخت با ۴۷۵ اتاق و سوئیت است.",
+      "location": {
+        "lat": 35.78953,
+        "long": 51.39096
+      },
+      "stars": 5,
+      "image": "https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI="
+    },
+    {
+      "name": "هتل اطلس",
+      "description": "هتل اطلس با قدمتی از سال ۱۳۲۰، در خیابان طالقانی تهران واقع شده و به دلیل نزدیکی به پارک هنرمندان و اماکن فرهنگی محبوب است.",
+      "location": {
+        "lat": 35.7069265,
+        "long": 51.4181336
+      },
+      "stars": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe91lmkQ2L86B_0m3dPKjzK3lt13pD_BHxwg&s"
+    },
+    {
+      "name": "هتل پارسیان اوین",
+      "description": "هتل پارسیان اوین، در نزدیکی هتل آزادی و منطقه‌ی اوین قرار دارد و اقامتگاهی راحت با دسترسی عالی به نقاط شمالی تهران ارائه می‌دهد.",
+      "location": {
+        "lat": 35.78953,
+        "long": 51.39096
+      },
+      "stars": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCjL4jYkRVLw7LI_svBrkeFNHZMOW5poDfA&s"
+    },
+    {
+      "name": "هتل تاج‌محل",
+      "description": "هتل تاج‌محل تهران در خیابان شیخ بهایی واقع شده و ترکیبی از معماری سنتی ایرانی و امکانات مدرن را به مهمانان ارائه می‌دهد.",
+      "location": {
+        "lat": 35.75255,
+        "long": 51.39615
+      },
+      "stars": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmVBBG2nPwGQPO3qiCbizRb7Bu8MbjdHHCdg&s"
+    },
+    {
+      "name": "هتل کارون",
+      "description": "هتل کارون با قدمتی از سال ۱۳۵۴، در خیابان ولیعصر تهران واقع شده و فضایی آرام در قلب پایتخت را برای مهمانان فراهم می‌کند.",
+      "location": {
+        "lat": 35.73249,
+        "long": 51.42268
+      },
+      "stars": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CTQo_YrIea8Dfle4Jjh4Hf9aYTGxNePgCw&s"
+    },
+    {
+      "name": "هتل آتنا",
+      "description": "هتل آتنا که قبلاً با نام هتل پرسپولیس شناخته می‌شد، در خیابان طالقانی غربی قرار دارد و امکاناتی مانند استخر سرپوشیده و سالن بدنسازی ارائه می‌دهد.",
+      "location": {
+        "lat": 35.7101,
+        "long": 51.4094
+      },
+      "stars": 4,
+      "image": "https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg"
+    },
+    {
+      "name": "هتل بین‌المللی پارسیان استقلال",
+      "description": "هتل بین‌المللی پارسیان استقلال، که در گذشته با نام هتل هیلتون تهران شناخته می‌شد، در بزرگراه چمران واقع شده و منظره‌ای زیبا از کوه‌های البرز دارد.",
+      "location": {
+        "lat": 35.79043,
+        "long": 51.41292
+      },
+      "stars": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuI7Eh3h9-TmArJiFhFg_WS8Upru65zqfD3Q&s"
+    }
+  ]
+}

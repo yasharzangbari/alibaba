@@ -1,0 +1,28 @@
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/woff/IRANSansX-Medium.woff") format("woff"),
+    url("../assets/fonts/woff2/IRANSansX-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url("../assets/fonts/woff/IRANSansX-Medium.woff") format("woff"),
+    url("../assets/fonts/woff2/IRANSansX-Medium.woff2") format("woff2");
+}
+
+:root {
+  direction: rtl;
+  text-align: right;
+  font-family: IRANSansX;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
