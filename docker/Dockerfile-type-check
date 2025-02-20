@@ -2,9 +2,12 @@ FROM node:20.18.0-alpine AS base
 
 WORKDIR /app
 
-COPY ../package.json /app
+COPY ../package.json ../yarn.lock ./
 
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --ignore-scripts
+
 COPY .. /app
-RUN yarn run type-check
-RUN yarn run lint-check
+
+RUN yarn run type-check && yarn run lint-check
+
+CMD ["yarn", "test"]

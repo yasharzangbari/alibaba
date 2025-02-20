@@ -1,0 +1,58 @@
+variables:
+  IMAGE_NAME: yashar1996/alibaba-task
+  TAG_NAME: latest
+  DOCKERFILE_TYPE_CHECKS: "./docker/Dockerfile-type-check"
+  DOCKERFILE_TEST_CHECKS: "./docker/Dockerfile-test-check"
+
+stages:
+  - type_checks
+  - test
+  - build
+  - deploy
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+type_checks:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: type_checks
+  script:
+    - docker build -f $DOCKERFILE_TYPE_CHECKS . -t type-checks:$CI_COMMIT_SHORT_SHA
+    - docker rmi -f type-checks:$CI_COMMIT_SHORT_SHA
+
+test:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: test
+  script:
+    - docker build -f $DOCKERFILE_TEST_CHECKS . -t test-check:$CI_COMMIT_SHORT_SHA
+    - docker rmi -f test-check:$CI_COMMIT_SHORT_SHA
+
+build:
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script: docker login -u $DOCKER_REGISTRY_USER -p $DOCKER_REGISTRY_PASS
+  variables:
+    DOCKER_TLS_CERTDIR: "/certs"
+  stage: build
+  script:
+    - docker build -f ./docker/Dockerfile -t $IMAGE_NAME:$TAG_NAME .
+    - docker push $IMAGE_NAME:$TAG_NAME
+#
+#
+#deploy:
+#  stage: deploy
+#  image: node:20.18
+#  script:
+#    - echo "Deploying application..."
+#  environment:
+#    name: production
+#    # url: https://your-production-url.com
+#  only:
+#    - main # Only deploy from the main branch
