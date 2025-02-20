@@ -16,7 +16,8 @@
       "~constants/*": ["./constants/*"],
       "~hooks/*": ["./hooks/*"],
       "~components/*": ["./components/*"],
-      "~lib/*": ["./lib/*"]
+      "~lib/*": ["./lib/*"],
+      "~rerender/*": ["./rerender/*"]
     }
   },
   "ts-node": {

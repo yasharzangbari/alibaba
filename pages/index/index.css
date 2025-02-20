@@ -1,7 +1,7 @@
 .hotel-list-container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 20px;
+  display: flex;
 }
 
 .search-box {
@@ -11,6 +11,10 @@
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.search-box::placeholder {
+  font-family: IRANSansX;
 }
 
 .hotel-card {
@@ -50,4 +54,9 @@
 .hotel-stars {
   font-size: 14px;
   color: gold;
+}
+
+.map-container {
+  padding: 0 20px;
+  width: 100%;
 }
