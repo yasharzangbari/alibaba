@@ -7,7 +7,8 @@
     "server": "node --loader ts-node/esm ./server/index.ts",
     "server:dev": "npm run server",
     "server:prod": "cross-env NODE_ENV=production npm run server",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "test": "vitest"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.7",
@@ -42,6 +43,7 @@
     "vite-plugin-ssr": "^0.4.142"
   },
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "vitest": "^3.0.6"
   }
 }
