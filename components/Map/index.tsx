@@ -1,13 +1,16 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import { DefaultPositionTuple } from "~types/map";
-import "leaflet/dist/leaflet.css";
-import { Hotel } from "~types/hotels";
+import { DefaultPositionTuple, MapDataProps } from "~types/map";
 import { Link } from "../../renderer/Link";
+import { Icon } from "leaflet";
+import marker from "../../assets/images/marker.svg";
+import "leaflet/dist/leaflet.css";
 
-type Props = {
-  data: Hotel[];
-};
-const Map = (props: Props) => {
+const myIcon = new Icon({
+  iconUrl: marker,
+  iconSize: [32, 32],
+});
+
+const Map = (props: MapDataProps) => {
   const { data } = props;
   const defaultPosition: DefaultPositionTuple = [35.738, 51.4444];
 
@@ -19,6 +22,7 @@ const Map = (props: Props) => {
       />
       {data?.map((hotel) => (
         <Marker
+          icon={myIcon}
           key={hotel.name}
           position={[hotel.location.lat, hotel.location.long]}
         >

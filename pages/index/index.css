@@ -1,62 +1,16 @@
 .hotel-list-container {
-  max-width: 100%;
-  padding: 20px;
   display: flex;
-}
-
-.search-box {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.search-box::placeholder {
-  font-family: IRANSansX;
-}
-
-.hotel-card {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 15px;
-  background: #fff;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.hotel-image {
-  width: 150px;
-  height: 131px;
-  object-fit: cover;
-}
-
-.hotel-info {
-  padding: 15px;
-  flex: 1;
-}
-
-.hotel-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.hotel-description {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 5px;
-}
-
-.hotel-stars {
-  font-size: 14px;
-  color: gold;
+  height: 100%;
 }
 
 .map-container {
+  flex: 1;
+  min-height: 500px;
   padding: 0 20px;
-  width: 100%;
+}
+
+.hotel-list {
+  flex: 1;
+  padding: 20px;
 }

@@ -13,13 +13,14 @@
     "server:prod:docker": "concurrently \"yarn run server:prod\" \"npx json-server db.json\"",
     "lint": "eslint . --max-warnings 0",
     "dev:docker": "docker compose -f ./docker/docker-compose.yaml up -d",
-    "preview": "vite preview --port 3001",
+    "preview": "concurrently \"vite preview --port 3001\" \"npx json-server db.json\"",
     "type-check": "tsc --skipLibCheck --noEmit",
     "test": "vitest",
     "lint-check": "eslint ."
   },
   "dependencies": {
     "@tanstack/react-query": "^5.66.7",
+    "@tanstack/react-virtual": "^3.13.0",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "@vitejs/plugin-react": "^4.0.4",
@@ -46,6 +47,7 @@
     "vite-plugin-ssr": "^0.4.142"
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^8.0.1",
     "@types/compression": "^1.7.5",
     "@types/express": "^4.17.17",
     "@types/leaflet": "^1.9.16",

@@ -2,7 +2,6 @@ import { UseQueryResult, useQuery } from "@tanstack/react-query";
 import { AxiosRequestConfig } from "axios";
 import { requestHandler } from "~lib/api/requestFactory";
 
-
 export const useRequest = <TData>(
   keys: Array<string>,
   request: AxiosRequestConfig,
@@ -13,7 +12,5 @@ export const useRequest = <TData>(
     queryFn: () => requestHandler(request),
     refetchInterval: refetch ? 3000 : undefined,
     initialData: undefined,
-    gcTime: 0,
-    staleTime: 0,
   });
 };

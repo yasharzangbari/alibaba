@@ -1,6 +1,7 @@
 import React from "react";
 import "./hotelDetail.css";
 import { Hotel } from "~types/hotels";
+import { toPersianNumber } from "~utils/toPersianNumber";
 
 const Page = (props: Hotel) => {
   return (
@@ -11,7 +12,8 @@ const Page = (props: Hotel) => {
         <p className="hotel-details-description">{props.description}</p>
         <p className="hotel-details-stars">{"⭐".repeat(props.stars)}</p>
         <p className="hotel-details-location">
-          📍 موقعیت: {props.location.lat}, {props.location.long}
+          📍 موقعیت: {toPersianNumber(props.location.lat)},{" "}
+          {toPersianNumber(props.location.long)}
         </p>
       </div>
       <div className="hotel-comments">

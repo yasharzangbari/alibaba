@@ -23,7 +23,7 @@ export default defineConfig({
       "~hooks": path.resolve(__dirname, "hooks"),
       "~components": path.resolve(__dirname, "components"),
       "~lib": path.resolve(__dirname, "lib"),
-      "~renderer": path.resolve(__dirname, "renderer"),
+      "~utils": path.resolve(__dirname, "utils"),
     },
   },
 });
