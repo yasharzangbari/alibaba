@@ -5,7 +5,12 @@ import { toPersianNumber } from "~utils/toPersianNumber";
 const Page = (props: Hotel) => {
   return (
     <div className="hotel-details">
-      <img src={props.image} alt={props.name} className="hotel-details-image" />
+      <img
+        src={props.image}
+        alt={props.name}
+        className="hotel-details-image"
+        loading="lazy"
+      />
       <div className="hotel-details-info">
         <h1 className="hotel-details-name">{props.name}</h1>
         <p className="hotel-details-description">{props.description}</p>
