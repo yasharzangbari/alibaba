@@ -1,6 +1,4 @@
 import React from "react";
-import { QUERY_KEYS } from "~constants/queryKeys";
-import { useRequest } from "~hooks/useRequest";
 import { endpoints } from "~lib/api/endpoints";
 import { Hotel } from "~types/hotels";
 import { ClientOnly } from "~components/ClientOnly";
@@ -15,11 +13,11 @@ const prefetchQueries = {
   },
 };
 
-const Page = () => {
-  const { data: hotels } = useRequest<Hotel[]>(
-    [QUERY_KEYS.GET_HOTELS],
-    endpoints.getHotels
-  );
+const Page = ({ hotels }: { hotels: Hotel[] }) => {
+  // const { data: hotels } = useRequest<Hotel[]>(
+  //   [QUERY_KEYS.GET_HOTELS],
+  //   endpoints.getHotels
+  // );
 
   return (
     <div className="hotel-list-container">

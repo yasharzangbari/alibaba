@@ -3,11 +3,13 @@ import ssr from "vite-plugin-ssr/plugin";
 import path from "path";
 import { defineConfig } from "vite";
 import VitePluginInjectPreload from "vite-plugin-inject-preload";
+import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   plugins: [
     react(),
     ssr(),
+    VitePWA({ registerType: "autoUpdate" }),
     VitePluginInjectPreload({
       files: [
         {
